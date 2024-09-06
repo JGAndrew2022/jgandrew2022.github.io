@@ -1,0 +1,24 @@
+.paper-card{
+    border-style: solid;
+    border-width: 0.15rem;
+    border-radius: 1rem;
+    border-color: 4C4C4C;
+    margin: 5%;
+    padding: 2%;
+    transition: box-shadow .3s;
+}
+
+.paper-card:hover {
+    box-shadow: 0 0 3rem rgba(33,33,33,.2); 
+  }
+
+.home-div{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    letter-spacing: 0.1rem;
+}
+p{font-size: 1.2rem;}
+
+h1{
+    font-size: 3.5rem;
+}
