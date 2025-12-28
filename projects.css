@@ -1,17 +1,12 @@
 /* Projects page */
-.paper-card h2{
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.paper-card p{
-  margin-bottom: 0.75rem;
-}
-
-.paper-card em{
-  color: rgba(255,255,255,0.75);
-}
-
 .container{
   max-width: 980px;
+}
+.container .card {
+  border: 1.5px solid rgba(0,0,0,0.18) !important;
+  border-radius: 16px;
+}
+
+.card:hover {
+  border-color: rgba(0,0,0,0.28) !important;
 }
