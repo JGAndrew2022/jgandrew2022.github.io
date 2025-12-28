@@ -1,75 +1,241 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Andrew Gusty - Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="resources/css/default.css" rel="stylesheet">
-    <link href="resources/css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid" style="font-size: 125%;">
+
+    <!-- CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+    />
+    <link href="resources/css/default.css" rel="stylesheet" />
+    <link href="resources/css/index.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">
+            Andrew Gusty
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resume.html">CV</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <!-- Linkedin -->
-            <a class="btn btn-dark btn-floating m-1" href="https://www.linkedin.com/in/andrew-gusty-555b14238/" role="button">
-              <i class="fa fa-linkedin-square fa-2x"></i></a>
-      
-            <!-- Github -->
-            <a class="btn btn-dark btn-floating m-1" href="https://github.com/JGAndrew2022" role="button"
-              ><i class="fa fa-github fa-2x"></i></a>
-          </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" aria-current="page">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">
+                        CV
+                    </a>
+                </li>
+            </ul>
+
+            <div class="d-flex gap-2">
+                <a
+                    class="btn btn-outline-light btn-sm"
+                    href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa fa-linkedin-square fa-lg"></i>
+                </a>
+
+                <a
+                    class="btn btn-outline-light btn-sm"
+                    href="https://github.com/JGAndrew2022"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                >
+                    <i class="fa fa-github fa-lg"></i>
+                </a>
+            </div>
         </div>
-      </div>
-    </nav>
-    <div class="text-center home-div">
-      <h1 class="home-div">Home</h1>
     </div>
-    <div class="custom_container">
-      <div class="text">
-        <p>
-          I am a senior at the University of Colorado Boulder pursuing dual B.S. degrees in Applied Mathematics and Computer Science. My work lies at the intersection of these fields—modeling, scientific computing, optimization, and control—and I am currently applying to Ph.D. programs with an interest in safe and robust control of distributed and nonlinear dynamical systems. I am also interested in partial differential equations, inverse problems, and physics-informed machine learning.
-          <br /><br />
-          I am an undergraduate research fellow in Dr. Emily Jensen’s lab in Electrical Engineering, where I study the modeling and analysis of wave-like systems with nonlinear dynamics, including soft-bodied robotic crawlers and nonlinear transmission lines. I also spent a summer as a research fellow in the <i>Patterns and PDEs</i> REU at UC Irvine, applying perturbation and stability methods to PDE models of biological self-organization. Across these projects, I have developed a strong interest in using mathematics to understand and control complex physical systems, and I look forward to continuing this work in graduate school.
-          </p>
-          <br />
-          <br />I am proficient in programming with MATLAB, Python, and C++, and I have hands-on experience with Linux, git, Jupyter, and Agile methodologies. My academic and research background has also equipped me with strong skills in partial differential equations, nonlinear dynamics, linear algebra, and numerical methods. Prior to focusing on research, I worked on the Linux Platform/DevOps for CU Boulder's Office of Information Technology, where I gained experience writing softwaere for system administration, automation, and monitoring.
-          <br />
-          <br />My relevant coursework completed at CU includes Nonlinear Control Systems, Partial Differential Equations, Real Analysis, Complex Analysis, Matrix Methods, Differential Equations, Operations Research, Calculus I-III, Markov Processes, Discrete Mathematics, Applied Probability, Algorithms, Quantum Algorithms, Advanced Data Science, Theory of Computation, Programming Languages, Computer Systems, Software Development, Intro to AI, and Data Structures. I am currently taking Numerical Methods and Scientific Computing, Stochastic Analysis for Finance, Machine Learning, Software Ethics, and pursuing a senior thesis.
+</nav>
 
-          </p>
-      </div>
-      <div class="image"><img src="resources/img/Andy23.jpg" class="me_img"/></div>
+<!-- ================= HERO ================= -->
+<header class="py-5 hero">
+    <div class="container">
+        <div class="row align-items-center g-4 flex-nowrap">
+
+            <div class="col-8 col-lg-8">
+                <h1 class="display-6 fw-semibold mb-2">
+                    Hi - I’m Andrew Gusty.
+                </h1>
+
+                <p class="lead text-secondary mb-4">
+                    Applied Mathematics + Computer Science at CU Boulder.
+                    I work on analysis and optimal control of dynamical and PDE systems.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-light border">PDEs</span>
+                    <span class="badge rounded-pill text-bg-light border">Control</span>
+                    <span class="badge rounded-pill text-bg-light border">
+                        Scientific Computing
+                    </span>
+                    <span class="badge rounded-pill text-bg-light border">
+                        Optimization
+                    </span>
+                    <span class="badge rounded-pill text-bg-light border">
+                        Nonlinear Waves
+                    </span>
+                    <span class="badge rounded-pill text-bg-light border">
+                        Pattern Formation
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-4 col-lg-3 text-center">
+                <img
+                    src="resources/img/Andy23.jpg"
+    alt="Photo of Andrew Gusty"
+    class="profile-img img-fluid shadow-sm mx-auto"
+    loading="lazy"
+    style="max-width: 250px;"
+                />
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section class="py-4">
+  <div class="container">
+    <h2 class="h4 fw-semibold mb-3">About</h2>
+
+    <div class="prose">
+      I am a senior at the University of Colorado Boulder pursuing dual B.S. degrees in Applied Mathematics and Computer Science. I research optimal control and analysis of PDE-governed systems under Dr. Emily Jensen’s in Electrical Engineering at CU. I also spent this past summer as an undergrad research fellow in the <em>Patterns and PDEs REU</em> at UC Irvine, where I studied pattern formation in reaction-diffusion models of biological growth. I also worked for two years as a system administrator on the Linux Platform/DevOps team for CU Boulder's Office of Information Technology, where I gained experience writing softwaere for system administration, automation, and monitoring.
+<br /><br />
+Currently, I am applying to PhD programs in engineering and applied mathematics, with an interest in optimal control and design of dynamical systems, safety and verification of autonomous systems, and analysis and numerical methods for PDE-governed models. I am proficient in programming with MATLAB, Python, and C++, and I have hands-on experience with Linux, git, Jupyter, and Agile methodologies. I also have research experience in partial differential equations, optimal control, numerical PDEs, and asymptotic methods. <br /><br />
+
     </div>
 
-    <footer class="bg-light text-center text-white">
-      <div class="container" style="padding-top: 10px; padding-bottom: 5px;">
+    <div class="d-flex flex-wrap gap-2 mt-3">
+      <a class="btn btn-primary" href="projects.html">See projects</a>
+      <a class="btn btn-outline-primary" href="resume.html">View CV</a>
+    </div>
+
+    <!-- ================= UPDATES ================= -->
+    <hr class="my-4">
+
+    <h2 class="h4 fw-semibold mb-3">Updates</h2>
+
+    <ul class="list-unstyled mb-0">
+      <li class="mb-3">
+        <div class="text-muted small">December 17, 2025</div>
+        <div>
+          Awarded <strong>Honorable Mention</strong> for the
+          <strong>2026 CRA Undergraduate Computing Awards</strong>.
+          Official announcement forthcoming January 2026.
+        </div>
+      </li>
+
+      <li class="mb-3">
+        <div class="text-muted small">December 10, 2025</div>
+        <div>
+          Presented <em>“Optimal Control of Soft-Robotic Crawlers Subject to Nonlinear Friction:
+          A Perturbation Analysis Approach”</em>
+          at the <strong>2025 IEEE Conference on Decision and Control</strong>.
+        </div>
+      </li>
+
+      <li class="mb-3">
+        <div class="text-muted small">October 17, 2025</div>
+        <div>
+          <em>Our work  "Pattern-forming instabilities in traveling interfaces of reaction-diffusion models for biological growth with chemotaxis" </em> has been accepted for presentation atthe <strong>2026 Joint Mathematics Meetings</strong>, Washington D.C. in January.
+        </div>
+      </li>
+
+      <li>
+        <div class="text-muted small">September 2, 2025</div>
+        <div>
+          <em>Our work “Optimal Control of Soft-Robotic Crawlers Subject to Nonlinear Friction:
+          A Perturbation Analysis Approach”</em>
+          has been published in <strong>IEEE Control Systems Letters</strong>.
+        </div>
+      </li>
+    </ul>
+    <!-- ================= /UPDATES ================= -->
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-light text-center text-white">
+    <div class="container" style="padding-top: 10px; padding-bottom: 5px;">
         <section class="mb-4">
-          <!-- Linkedin -->
-          <a class="btn btn-dark btn-floating m-1" href="https://www.linkedin.com/in/andrew-gusty-555b14238/" role="button">
-            <i class="fa fa-linkedin-square fa-2x"></i></a>
-    
-          <!-- Github -->
-          <a class="btn btn-dark btn-floating m-1" href="https://github.com/JGAndrew2022" role="button"
-            ><i class="fa fa-github fa-2x"></i
-          ></a>
+
+            <a
+                class="btn btn-dark btn-floating m-1"
+                href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
+                role="button"
+            >
+                <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+
+            <a
+                class="btn btn-dark btn-floating m-1"
+                href="https://github.com/JGAndrew2022"
+                role="button"
+            >
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+
         </section>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+
+<!-- JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+></script>
+
+</body>
 </html>
