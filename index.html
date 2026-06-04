@@ -4,19 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Andrew Gusty - Home</title>
+    <title>Andy Gusty - Home</title>
 
     <!-- CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet"
     />
-    <link href="resources/css/default.css" rel="stylesheet" />
-    <link href="resources/css/index.css" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,246 +36,366 @@
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-semibold" href="index.html">
-            Andrew Gusty
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <div class="navbar-left">
+      <a class="navbar-brand" href="index.html">
+        Andy Gusty
+      </a>
+    </div>
+
+    <div class="navbar-right">
+
+      <div class="navbar-socials">
+        <a href="https://scholar.google.com/citations?user=tao6RBIAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <i class="fa fa-graduation-cap"></i>
         </a>
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <a href="https://orcid.org/0009-0004-5802-1346"
+  target="_blank"
+        rel="noopener"
+        aria-label="ORCID">
+        <i class="ai ai-orcid"></i>
+      </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html" aria-current="page">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">
-                        Projects
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.html">
-                        CV
-                    </a>
-                </li>
-            </ul>
+        <a href="https://github.com/JGAndrew2022" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa fa-github"></i>
+        </a>
 
-            <div class="d-flex gap-2">
-                <a
-                    class="btn btn-outline-light btn-sm"
-                    href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                >
-                    <i class="fa fa-linkedin-square fa-lg"></i>
-                </a>
+        <a href="https://www.linkedin.com/in/andrew-gusty-555b14238/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
 
-                <a
-                    class="btn btn-outline-light btn-sm"
-                    href="https://github.com/JGAndrew2022"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="GitHub"
-                >
-                    <i class="fa fa-github fa-lg"></i>
-                </a>
-            </div>
-        </div>
+      <div class="navbar-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="resume.html">CV</a>
+      </div>
+
     </div>
+
+  </div>
 </nav>
 
-<!-- ================= HERO ================= -->
-<header class="py-5 hero">
-    <div class="container">
-        <div class="row align-items-center g-4 flex-nowrap">
+<div class="content-layout">
 
-            <div class="col-8 col-lg-8">
-                <h1 class="display-6 fw-semibold mb-2">
-                    Hi - I’m Andrew Gusty
-                </h1>
+  <aside class="intro-card">
+    <img
+      src="resources/img/Andy23.jpg"
+      alt="Andy Gusty"
+      class="intro-profile-img"
+    />
 
-                <p class="lead text-secondary mb-4">
-                    Applied Mathematics + Computer Science at CU Boulder.
-                    I work on analysis and optimal control of dynamical and PDE systems.
-                </p>
+    <h4>Andy Gusty</h4>
 
-                <div class="d-flex flex-wrap gap-2">
-                    <span class="badge rounded-pill text-bg-light border">PDEs</span>
-                    <span class="badge rounded-pill text-bg-light border">Control</span>
-                    <span class="badge rounded-pill text-bg-light border">
-                        Scientific Computing
-                    </span>
-                    <span class="badge rounded-pill text-bg-light border">
-                        Optimization
-                    </span>
-                    <span class="badge rounded-pill text-bg-light border">
-                        Nonlinear Waves
-                    </span>
-                    <span class="badge rounded-pill text-bg-light border">
-                        Pattern Formation
-                    </span>
-                </div>
-            </div>
+    <div class="intro-meta">
+      <div>La Jolla, CA</div>
+      <div>UC San Diego</div>
+    </div>
 
-            <div class="col-4 col-lg-3 text-center">
-                <img
-                    src="resources/img/Andy23.jpg"
-    alt="Photo of Andrew Gusty"
-    class="profile-img img-fluid shadow-sm mx-auto"
-    loading="lazy"
-    style="max-width: 250px;"
-                />
-            </div>
+    <div class="intro-links">
+      <a href="mailto:angusty@ucsd.edu">
+        <i class="fa fa-envelope"></i>
+        Email
+      </a>
 
+      <a href="https://scholar.google.com/citations?user=tao6RBIAAAAJ&hl=en" target="_blank" rel="noopener">
+        <i class="fa fa-graduation-cap"></i>
+        Google Scholar
+      </a>
+
+      <a href="https://orcid.org/0009-0004-5802-1346" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+        ORCID
+      </a>
+
+      <a href="https://github.com/JGAndrew2022" target="_blank" rel="noopener">
+        <i class="fa fa-github"></i>
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
+         target="_blank"
+         rel="noopener">
+        <i class="fa fa-linkedin-square"></i>
+        LinkedIn
+      </a>
+    </div>
+  </aside>
+
+  <main class="content-main">
+
+    <header class="intro-section">
+      <div class="intro-text">
+        <h2>Andy Gusty</h2>
+
+        <div class="subtitle">
+          PhD Student in Mechanical and Aerospace Engineering
         </div>
-    </div>
-</header>
 
-<!-- ================= ABOUT ================= -->
-<section class="py-4">
-  <div class="container">
-    <h2 class="h4 fw-semibold mb-3">About</h2>
+        <p>
 
-    <div class="prose">
-      I am a senior at the University of Colorado Boulder pursuing dual B.S. degrees in Applied Mathematics and Computer Science. I research optimal control and analysis of PDE-governed systems under Dr. Emily Jensen’s in Electrical Engineering at CU. I also spent this past summer as an undergrad research fellow in the <em>Patterns and PDEs REU</em> at UC Irvine, where I studied pattern formation in reaction-diffusion models of biological growth. I also worked for two years as a system administrator on the Linux Platform/DevOps team for CU Boulder's Office of Information Technology, where I gained experience writing softwaere for system administration, automation, and monitoring.
-<br /><br />
-Currently, I am applying to PhD programs in engineering and applied mathematics, with an interest in optimal control and design of dynamical systems, safety and verification of autonomous systems, and analysis and numerical methods for PDE-governed models. I am proficient in programming with MATLAB, Python, and C++, and I have hands-on experience with Linux, git, Jupyter, and Agile methodologies. I also have research experience in partial differential equations, optimal control, numerical PDEs, and asymptotic methods. <br /><br />
+          Thank you for your interest in my work! I am an incoming Ph.D. student in the Department of Mechanical and Aerospace Engineering at UC San Diego. I recently completed a B.S. in Applied Math and Computer Science at CU Boulder. This summer, I am a researcher in the
+          <a href="https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/"
+            target="_blank" rel="noopener" class="body-link">RIPS program</a>
+          at the
+          <a href="https://www.ipam.ucla.edu/"
+            target="_blank" rel="noopener" class="body-link">Institute for Pure and Applied Mathematics (IPAM)</a> at UCLA.
 
-    </div>
+        </p>
 
-    <div class="d-flex flex-wrap gap-2 mt-3">
-      <a class="btn btn-primary" href="projects.html">See projects</a>
-      <a class="btn btn-outline-primary" href="resume.html">View CV</a>
-    </div>
+        <p>
+          I do research in control theory and applied partial differential equations. At CU Boulder, I worked with Professors <a href="https://jensenemily.github.io/"
+             target="_blank" rel="noopener" class="body-link">Emily Jensen</a>
+          and
+          <a href="https://www.scarboroughlab.com/"
+             target="_blank" rel="noopener" class="body-link">Cody Scarborough</a> in Electrical Engineering on two main research directions: (i) optimal design of nonlinear systems such as soft robots and nonlinear transmission lines and (ii) control synthesis under architectural constraints for large, spatially distributed systems such as power networks and waterways.
+        </p>
 
-    <!-- ================= UPDATES ================= -->
-    <hr class="my-4">
+        <p>
+          This fall, I am excited to join Professor
+          <a href="https://kramer.ucsd.edu/"
+             target="_blank" rel="noopener" class="body-link">Boris Kramer’s</a>
+          group at UCSD as a PhD student to research reduced-order modeling and control methods for additive manufacturing. I am also grateful to the
+          <a href="https://www.colorado.edu/cs/five-cs-students-earn-major-national-science-foundation-fellowships"
+             target="_blank" rel="noopener" class="body-link">NSF Graduate Research Fellowship Program</a> for supporting my PhD work.
+        </p>
 
-    <h2 class="h4 fw-semibold mb-3">Updates</h2>
-
-    <ul class="list-unstyled mb-0">
-
-
-    <li class="mb-3">
-        <div class="text-muted small">January 21, 2026</div>
-        <div>
-          Our paper <em>"A System Level Approach to LQR Control of the Diffusion Equation"</em> has been accepted for publication in the proceedings of the <strong>2026 American Control Conference</strong>.
-        </div>
-      </li>
-
-
-      <li class="mb-3">
-  <div class="d-flex gap-3 align-items-start">
-
-    <div class="flex-grow-1">
-      <div class="text-muted small">January 8, 2026</div>
-      <div>
-        It was great to present our work
-        <em>"Pattern-forming instabilities in traveling interfaces of reaction-diffusion models for biological growth with chemotaxis"</em>
-        at <strong>JMM 2026</strong> with my colleague Jennifer Shim.
-        Thank you to Prof. Paul Carter for his mentorship and support through the Patterns & PDEs REU.
+        <a class="btn btn-dark mt-3" href="resume.html">
+          Curriculum Vitae
+        </a>
       </div>
-    </div>
+    </header>
 
-    <img src="resources/img/jmm.jpg"
-         alt="JMM 2026 presentation"
-         style="width: 200px; max-width: 200px; height: auto; align-self: flex-start; flex: 0 0 auto; display: block;">
-  </div>
-</li>
+    <section class="page-section">
+      <h2>About</h2>
 
-        <li class="mb-3">
-        <div class="text-muted small">December 17, 2025</div>
-        <div>
-          Awarded <strong>Honorable Mention</strong> for the
-          <strong>2026 CRA Undergraduate Computing Awards</strong>.
-          Official announcement <a href="https://cra.org/crn/2026/01/2025-26-cra-outstanding-undergraduate-researcher-award-recipients-announced/" target="_blank" rel="noopener">here</a>.
-        </div>
-      </li>
+      <div class="prose">
+        I am a senior at the University of Colorado Boulder pursuing dual B.S. degrees in Applied Mathematics and Computer Science. I research optimal control and analysis of PDE-governed systems under Dr. Emily Jensen’s in Electrical Engineering at CU. I also spent this past summer as an undergrad research fellow in the <em>Patterns and PDEs REU</em> at UC Irvine, where I studied pattern formation in reaction-diffusion models of biological growth. I also worked for two years as a system administrator on the Linux Platform/DevOps team for CU Boulder's Office of Information Technology, where I gained experience writing softwaere for system administration, automation, and monitoring.
+        <br /><br />
+        Currently, I am applying to PhD programs in engineering and applied mathematics, with an interest in optimal control and design of dynamical systems, safety and verification of autonomous systems, and analysis and numerical methods for PDE-governed models. I am proficient in programming with MATLAB, Python, and C++, and I have hands-on experience with Linux, git, Jupyter, and Agile methodologies. I also have research experience in partial differential equations, optimal control, numerical PDEs, and asymptotic methods.
+      </div>
 
-      <li class="mb-3">
-  <div class="d-flex gap-3 align-items-start">
+      <div class="d-flex flex-wrap gap-2 mt-3">
+        <a class="btn btn-dark mt-3" href="projects.html">See projects</a>
+      </div>
+    </section>
 
-    <div class="flex-grow-1">
-      <div class="text-muted small">December 10, 2025</div>
+    <section class="page-section updates-section">
+  <h2>Updates</h2>
+
+  <ul class="updates-list">
+
+    <li>
+      <div class="update-date">June 21, 2026</div>
       <div>
+        I start my work at UCLA this summer as a researcher in the
+        <a
+          href="https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >Institute for Pure and Applied Mathematics (IPAM) RIPS program</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">June 2, 2026</div>
+      <div>
+        I start my work at UCLA this summer as a researcher in the
+        <a
+          href="https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >Institute for Pure and Applied Mathematics (IPAM) RIPS program</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">May 2, 2026</div>
+      <div class="update-with-image">
+        <div>
+          I graduated with a B.S. in Applied Mathematics and Computer Science from the University of Colorado Boulder.
+        </div>
+
+        <img
+          src="resources/img/IMG_0635.JPEG"
+          alt="Andy Gusty at CU Boulder graduation"
+          class="update-img"
+        />
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">April 14, 2026</div>
+      <div>
+        I successfully defended my senior thesis on designing nonlinear transmission lines for synthesizing high-powered microwave pulses.
+        Thank you to my senior thesis committee: A, B, C, and D.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">April 12, 2026</div>
+      <div>
+        I was awarded the
+        <a
+          href="https://www.colorado.edu/engineering/academics/graduation/graduating-student-awards"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >CEAS Graduating Student Research Award</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">April 12, 2026</div>
+      <div>
+        I was awarded the
+        <a
+          href="https://www.nsfgrfp.org/"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >NSF Graduate Research Fellowship</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">March 25, 2026</div>
+      <div>
+        I accepted an offer to pursue a Ph.D. with Professor
+        <a
+          href="https://maeweb.ucsd.edu/faculty/profiles/bkramer.html"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >Boris Kramer</a>’s research group at UC San Diego.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">January 21, 2026</div>
+      <div>
+        Our paper <em>"A System Level Approach to LQR Control of the Diffusion Equation"</em>
+        has been accepted for publication in the proceedings of the
+        <strong>2026 American Control Conference</strong>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">January 8, 2026</div>
+      <div class="update-with-image">
+        <div>
+          It was great to present our work
+          <em>"Pattern-forming instabilities in traveling interfaces of reaction-diffusion models for biological growth with chemotaxis"</em>
+          at <strong>JMM 2026</strong> with my colleague Jennifer Shim.
+          Thank you to Prof. Paul Carter for his mentorship and support through the Patterns & PDEs REU.
+        </div>
+
+        <img
+          src="resources/img/jmm.jpg"
+          alt="JMM 2026 presentation"
+          class="update-img"
+        />
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">December 17, 2025</div>
+      <div>
+        Awarded <strong>Honorable Mention</strong> for the
+        <strong>2026 CRA Undergraduate Computing Awards</strong>.
+        Official announcement
+        <a
+          href="https://cra.org/crn/2026/01/2025-26-cra-outstanding-undergraduate-researcher-award-recipients-announced/"
+          target="_blank"
+          rel="noopener"
+          class="body-link"
+        >here</a>.
+      </div>
+    </li>
+
+    <li>
+      <div class="update-date">December 10, 2025</div>
+      <div class="update-with-image">
+        <div>
           Presented <em>“Optimal Control of Soft-Robotic Crawlers Subject to Nonlinear Friction:
           A Perturbation Analysis Approach”</em>
           at the <strong>2025 IEEE Conference on Decision and Control</strong>.
         </div>
-    </div>
 
-    <img src="resources/img/CDC2025.jpg"
-         alt="JMM 2026 presentation"
-         style="width: 200px; max-width: 200px; height: auto; align-self: flex-start; flex: 0 0 auto; display: block;">
-  </div>
-</li>
+        <img
+          src="resources/img/CDC2025.jpg"
+          alt="CDC 2025 presentation"
+          class="update-img"
+        />
+      </div>
+    </li>
 
-      <li class="mb-3">
-        <div class="text-muted small">October 17, 2025</div>
-        <div>
-          Our work <em>"Pattern-forming instabilities in traveling interfaces of reaction-diffusion models for biological growth with chemotaxis" </em> has been accepted for presentation at the <strong>2026 Joint Mathematics Meetings</strong>, Washington D.C. in January.
-        </div>
-      </li>
+    <li>
+      <div class="update-date">October 17, 2025</div>
+      <div>
+        Our work <em>"Pattern-forming instabilities in traveling interfaces of reaction-diffusion models for biological growth with chemotaxis"</em>
+        has been accepted for presentation at the
+        <strong>2026 Joint Mathematics Meetings</strong>, Washington D.C. in January.
+      </div>
+    </li>
 
-      <li>
-        <div class="text-muted small">September 2, 2025</div>
-        <div>
-          <em>Our work “Optimal Control of Soft-Robotic Crawlers Subject to Nonlinear Friction:
-          A Perturbation Analysis Approach”</em>
-          has been published in <strong>IEEE Control Systems Letters</strong>.
-        </div>
-      </li>
-    </ul>
-    <!-- ================= /UPDATES ================= -->
-  </div>
+    <li>
+      <div class="update-date">September 2, 2025</div>
+      <div>
+        <em>Our work “Optimal Control of Soft-Robotic Crawlers Subject to Nonlinear Friction:
+        A Perturbation Analysis Approach”</em>
+        has been published in <strong>IEEE Control Systems Letters</strong>.
+      </div>
+    </li>
+
+  </ul>
 </section>
 
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="mailto:angusty@ucsd.edu">
+        <i class="fa fa-envelope"></i>
+        Email
+      </a>
 
+      <a href="https://scholar.google.com/citations?user=tao6RBIAAAAJ&hl=en" target="_blank" rel="noopener">
+        <i class="fa fa-graduation-cap"></i>
+        Google Scholar
+      </a>
 
-<!-- ================= FOOTER ================= -->
-<footer class="bg-light text-center text-white">
-    <div class="container" style="padding-top: 10px; padding-bottom: 5px;">
-        <section class="mb-4">
+      <a href="https://orcid.org/0009-0004-5802-1346" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+        ORCID
+      </a>
 
-            <a
-                class="btn btn-dark btn-floating m-1"
-                href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
-                role="button"
-            >
-                <i class="fa fa-linkedin-square fa-2x"></i>
-            </a>
+      <a href="https://github.com/JGAndrew2022" target="_blank" rel="noopener">
+        <i class="fa fa-github"></i>
+        GitHub
+      </a>
 
-            <a
-                class="btn btn-dark btn-floating m-1"
-                href="https://github.com/JGAndrew2022"
-                role="button"
-            >
-                <i class="fa fa-github fa-2x"></i>
-            </a>
+      <a href="https://www.linkedin.com/in/andrew-gusty-555b14238/"
+         target="_blank"
+         rel="noopener">
+        <i class="fa fa-linkedin-square"></i>
+        LinkedIn
+      </a>
+      </div>
+    </footer>
 
-        </section>
-    </div>
-</footer>
+  </main>
+
+</div>
 
 <!-- JS -->
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"
 ></script>
+
 
 </body>
 </html>
